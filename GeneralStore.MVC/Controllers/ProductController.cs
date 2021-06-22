@@ -15,5 +15,7 @@ namespace GeneralStore.MVC.Controllers
         {
             return View(_db.Products.ToList());
         }
+
+        
     }
 }

@@ -109,3 +109,4 @@ S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore
 S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.InitialCreate.resources
 S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.GenerateResource.cache
 S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.customersAdded.resources
+S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.TransactionAdded.resources

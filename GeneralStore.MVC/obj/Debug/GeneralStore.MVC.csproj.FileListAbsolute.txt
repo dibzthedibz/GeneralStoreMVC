@@ -106,3 +106,6 @@ S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore
 S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.CopyComplete
 S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.dll
 S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.pdb
+S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.InitialCreate.resources
+S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.GenerateResource.cache
+S:\Bootcamp Work Folder Boom\RedBadge\GeneralStore\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.customersAdded.resources

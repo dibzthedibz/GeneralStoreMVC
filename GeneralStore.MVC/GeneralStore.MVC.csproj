@@ -172,6 +172,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,6 +183,10 @@
     <Compile Include="Migrations\202106221551127_customersAdded.cs" />
     <Compile Include="Migrations\202106221551127_customersAdded.Designer.cs">
       <DependentUpon>202106221551127_customersAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106221708595_TransactionAdded.cs" />
+    <Compile Include="Migrations\202106221708595_TransactionAdded.Designer.cs">
+      <DependentUpon>202106221708595_TransactionAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -259,6 +264,8 @@
     <Content Include="Views\Customer\Delete.cshtml" />
     <Content Include="Views\Customer\Edit.cshtml" />
     <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Transaction\Index.cshtml" />
+    <Content Include="Views\Transaction\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -282,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106221551127_customersAdded.resx">
       <DependentUpon>202106221551127_customersAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106221708595_TransactionAdded.resx">
+      <DependentUpon>202106221708595_TransactionAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

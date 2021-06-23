@@ -25,7 +25,7 @@ namespace GeneralStore.MVC.Controllers
             return View();
         }
         //Post: Product
-        [HttpPost]
+        [HttpPost, ActionName("Create")]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Product product)
         {
@@ -89,6 +89,8 @@ namespace GeneralStore.MVC.Controllers
             }
             return View(product);
         }
+
+        
         //Get: Details Product/Details/{Id}
         public ActionResult Details(int? id)
         {

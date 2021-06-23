@@ -44,5 +44,74 @@ namespace GeneralStore.MVC.Controllers
             }
             return View(transaction);
         }
+        // Get: Delete
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Transaction transaction = _db.Transactions.Find(id);
+            if (transaction == null)
+            {
+                return HttpNotFound();
+            }
+            return View(transaction);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id)
+        {
+            Transaction transaction = _db.Transactions.Find(id);
+            _db.Transactions.Remove(transaction);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        //Get : Transaction/Edit/{Id}
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Transaction transaction = _db.Transactions.Find(id);
+            if (transaction == null)
+            {
+                return HttpNotFound();
+            }
+            var pList = _db.Products.ToList();
+            var cList = _db.Customers.ToList();
+            ViewBag.ProductId = new SelectList(pList, "ProductId", "Name");
+            ViewBag.CustomerId = new SelectList(cList, "CustomerId", "FullName");
+            return View(transaction);
+        }
+        //Post: Transaction/Edit {id}
+        [HttpPost, ActionName("Edit")]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Transaction transaction)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Entry(transaction).State = EntityState.Modified;
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(transaction);
+        }
+
+        //Get: Details Transaction/Details/{Id}
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Transaction transaction = _db.Transactions.Find(id);
+            if (transaction == null)
+            {
+                return HttpNotFound();
+            }
+            return View(transaction);
+        }
     }
 }
